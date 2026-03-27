@@ -1,11 +1,46 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Who Owns the Group Chat?
 
-To start the slide show:
+**Groups and Collective Ownership on ATProto**
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+A talk by Brittany Ellich about building shared group infrastructure on the AT Protocol. ATProto has solved personal data ownership — your posts, your social graph, your identity all live in your repo. But what about shared things? What about the book club, the community project, the group chat?
 
-Edit the [slides.md](./slides.md) to see the changes.
+This talk explores the design space for groups on ATProto, surveys community thinking, and walks through [opensocial.community](https://opensocial.community) — group infrastructure (not an app) that any ATProto application can use to add community features.
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+## Resources
+
+- **API and Docs** — [opensocial.community](https://opensocial.community)
+- **Blog post** — [brittanyellich.com/atproto-groups](https://brittanyellich.com/atproto-groups)
+- **Book club** — [overcommitted.dev](https://overcommitted.dev)
+
+## Community References
+
+- Bryan Newbold — [Community Spaces on AT Protocol](https://bnewbold.leaflet.pub/3me3ea64bhk26)
+- Nick Gerakines — [The Community Manager Pattern](https://ngerakines.leaflet.pub/3majmrpjrd22b) and [Forums](https://ngerakines.leaflet.pub/3malqm3dqls27)
+- [ATProto Community Discourse](https://discourse.atprotocol.community/t/representing-groups-and-other-shared-resources-in-atproto/296)
+- Bonfire Networks — [Groups in the Fediverse](https://discourse.atprotocol.community/t/bonfire-networks-why-community-matters-groups-as-the-next-step-for-the-fediverse/350)
+- Erlend Sogge Heggen — [Group Convergence](https://blog.erlend.sh/group-convergence)
+- Nathan Schneider — [Governable Spaces](https://luminosoa.org/books/m/10.1525/luminos.181)
+
+## Running the Slides
+
+This presentation is built with [Slidev](https://sli.dev/).
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start the dev server
+pnpm dev
+
+# Visit http://localhost:3030
+```
+
+### Other commands
+
+```bash
+# Build for production
+pnpm build
+
+# Export to PDF (requires playwright-chromium)
+pnpm export
+```
