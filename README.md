@@ -4,13 +4,13 @@
 
 A talk by Brittany Ellich about building shared group infrastructure on the AT Protocol. ATProto has solved personal data ownership — your posts, your social graph, your identity all live in your repo. But what about shared things? What about the book club, the community project, the group chat?
 
-This talk explores the design space for groups on ATProto, surveys community thinking, and walks through [opensocial.community](https://opensocial.community) — group infrastructure (not an app) that any ATProto application can use to add community features.
+This talk explores the design space for groups on ATProto, surveys community thinking, and walks through [opensocial.community](https://opensocial.community), a group infrastructure service that any ATProto application can use to add community features.
 
 ## Resources
 
-- **API and Docs** — [opensocial.community](https://opensocial.community)
-- **Blog post** — [brittanyellich.com/atproto-groups](https://brittanyellich.com/atproto-groups)
-- **Book club** — [overcommitted.dev](https://overcommitted.dev)
+- [opensocial.community](https://opensocial.community) - API and docs
+- [brittanyellich.com/atproto-groups](https://brittanyellich.com/atproto-groups) - Blog post
+- [overcommitted.dev](https://overcommitted.dev) - Book club
 
 ## Community References
 

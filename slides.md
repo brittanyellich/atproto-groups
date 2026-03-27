@@ -4,14 +4,14 @@ title: "Who Owns the Group Chat?"
 info: |
   ## Who Owns the Group Chat?
   Groups and Collective Ownership on ATProto
- 
+
   By Brittany Ellich
 drawings:
   persist: false
 transition: fade
 layout: intro
 ---
- 
+
 # Who Owns the Group Chat?
 
 ## Groups and Collective Ownership on ATProto
@@ -26,9 +26,13 @@ layout: intro
 </div>
 
 <!--
-Welcome, everyone. Today I want to talk about a question that I think is one of the most interesting open problems in the ATProto ecosystem: who owns the group chat?
+- I'm Brittany
+- Staff Eng at GitHub
+- AtProto enthusiast
+- Chronically online
 
-Intro, hi, I'm Brittany. I'm a staff engineer at GitHub, AtProto enthusiast, and a chronically online software nerd. I also am a co-host of the podcast Overcommitted, for which I'll be recording some video for a special Atmosphereconf episode this weekend, so come say hello to me! I also brought stickers :) 
+- I co-host the Overcommitted podcast, will be recording this weekend
+- I also brought stickers :)
 -->
 
 ---
@@ -51,6 +55,8 @@ Turns out it did exist, and some folks did it way better than I did. (Please go 
 <!--
 A few months ago I had what I thought was a brilliant idea. A GoodReads or Letterboxd on ATProto — how does this not exist yet?? So I started building Collective.
 
+<click click>
+
 Turns out it did exist. PopFeed and others were already doing this, and honestly doing it better than I did. But when I was researching what I wanted to build, one particular problem nerd-sniped me enough to look deeper into a particular pattern.
 -->
 
@@ -69,7 +75,7 @@ Turns out it did exist. PopFeed and others were already doing this, and honestly
 <!--
 I run a book club for the online developer community for Overcommitted. We read technical and software books together, and it's one of my favorite places on the internet.
  
-Right now we coordinate on Discord. And Discord is great! But Discord owns our member list. Discord owns our reading history. Discord owns the conversations we've had about every book. If Discord decides to change their terms, or shut down, or ban us for some reason — all of that is just gone.
+Right now we coordinate on Discord. And Discord is great! But Discord owns our member list, our reading history, and every conversation we've had about every book. If Discord decides to change their terms, or shut down, or ban us for some reason — all of that is just gone.
 -->
 
 ---
@@ -93,18 +99,18 @@ layout: statement
 <img src="/graveyard.jpg" alt="Illustration of a graveyard representing defunct platforms and lost community data" class="mx-auto mt-4 h-80 rounded shadow" />
 
 <!--
-And when the platform disappears, your community disappears with it. Google+, MySpace, Twitter, countless forums — all gone, along with every conversation, every shared memory, every piece of community knowledge. If Discord decides to shut down tomorrow, my book club's entire history vanishes. Not because we did anything wrong, but because we built on someone else's land.
+And when the platform disappears, your community disappears with it. Google+, MySpace, Twitter, countless forums — all gone, along with every conversation, every shared memory, every piece of community knowledge. If Discord decides to shut down tomorrow, my book club's entire history vanishes. Not because we did anything wrong, but because we built in someone else's space.
 -->
 
 ---
 
 # ATProto Solved Personal Ownership
 
-ATProto has done something really powerful for **personal data**:
+ATProto has been awesome for **personal data**:
 
 - Your **posts** live in your repo
 - Your **social graph** is under your control
-- Your **identity** is portable via DIDs
+- Your **identity** is portable to other PDSs
 
 <div v-click class="mt-8 p-4 bg-gray-100 rounded-lg">
 
@@ -119,7 +125,7 @@ That's a little less solved.
 <!--
 ATProto has done something really powerful for personal data. Your posts, your social graph, your identity — that lives in your repo, under your control. But what about shared things? What about the book club? The community project? The group chat?
  
-That's still an open question. And it's a genuinely exciting one — because when you build groups on a decentralized protocol, you're forced to answer a question that centralized platforms never had to: who actually owns this space?
+That's still an open question. And it's an exciting one — because when you build groups on a decentralized protocol, you're forced to answer a question that centralized platforms never did: who actually owns this space?
 -->
 
 ---
@@ -129,7 +135,7 @@ layout: section
 # The Design Space
 
 <!--
-There's no built-in concept of a group. And I actually think that's a feature, not a bug. Because it means when you build groups, you get to make deliberate choices about things that centralized platforms never thought twice about.
+There's no built-in concept of a group. And I actually think that's not a bad thing. Because it means when you build groups, you get to make deliberate choices about things that centralized platforms never thought twice about.
 -->
 
 ---
@@ -188,7 +194,7 @@ I've been collecting all of these resources and learning from them to put togeth
 </div>
 
 <!--
-There's been wonderful thinking happening in this community already. Bryan Newbold has written two really thoughtful proposals — most recently on community spaces with self-hosting patterns. Nick Gerakines took some of these ideas and built out the "Community Manager Pattern," showing how wrapper records can separate data ownership from community curation. Meri put together a comprehensive summary. The Frontpage team has a great GitHub discussion. And Bonfire Networks and Erlend Sogge Heggen have been thinking about group federation across the fediverse, including the really interesting idea of groups following groups. I've had some great input on Bluesky and on calls with Emelia on ways to think about this.
+There's been wonderful thinking happening in this community already. Bryan Newbold has written two really thoughtful proposals — most recently on community spaces with self-hosting patterns. Nick Gerakines took some of these ideas and built out the "Community Manager Pattern," showing how wrapper records can separate data ownership from community curation. Meri put together a comprehensive summary. The Frontpage team has a great GitHub discussion. And Bonfire Networks and Erlend Sogge Heggen have been thinking and shared about group federation across the fediverse, including the really interesting idea of groups following groups. I've had some great input on Bluesky and on calls with Emelia on ways to think about this.
  
 I've been collecting all of these resources and learning from them — I'll share links at the end.
 -->
@@ -197,7 +203,7 @@ I've been collecting all of these resources and learning from them — I'll shar
 layout: quote
 ---
 
-# "ATProto's philosophy is 'your data, your repo.' That's great for personal data. But shared state doesn't fit neatly into one person's repo."
+# ATProto's philosophy is 'your data, your repo.' That's great for personal data. But shared state doesn't fit neatly into one person's repo.
 
 How do we extend the ownership model to collective data without losing what makes ATProto special?
 
@@ -219,7 +225,7 @@ I want to walk you through one approach I've been building. This isn't the answe
 
 # opensocial.community
 
-**Group infrastructure, not an app.** A service that any ATProto app can use to add community features.
+**Group infrastructure** a service that any ATProto app can use to add community features.
 
 <div class="mt-4 text-sm text-gray-500">
 
@@ -342,11 +348,11 @@ graph LR
 
 <div class="mt-4 space-y-3">
 
-- **Step 1**: Alice creates a membership record in **her repo**, she owns it
-- **Step 2**: The group creates a membership proof in **its repo** confirming acceptance
-- Alice can **leave anytime** by deleting her record, no permission needed
-- The group can **revoke** by removing the proof
-- **Privacy through indirection**: the group's repo stores CID hashes, not member identities directly
+- Alice creates a membership record in **her repo**, she owns it
+- The group creates a membership proof in **its repo** confirming acceptance
+- Alice can leave anytime by deleting her record, no permission needed
+- The group can revoke by removing the proof
+- The group's repo stores CID hashes, not member identities directly
 
 </div>
 
@@ -383,10 +389,10 @@ graph LR
 
 <div class="mt-4 space-y-2">
 
-- **Moderation without data loss** — delete the wrapper, the user's content stays intact
-- **User leaves?** — their content remains in their repo; wrappers become tombstones
-- **Cross-posting** — multiple communities can wrap the same content
-- **Group repo stays lightweight** — it's an index of references, not a copy of all content
+- Delete the wrapper, the user's content stays intact
+- User leaves? Their content remains in their repo; wrappers become tombstones
+- Multiple communities can wrap the same content
+- The group repo is an index of references, not a copy of all content
 
 </div>
 
@@ -548,11 +554,11 @@ opensocial.community already supports shared governance across a group of admins
 
 ## Layered Moderation
 
-Leaning on ATProto's **labeler system** — but scoped to communities.
+Leaning on ATProto's **labeler system**, scoped to communities.
 
-- The **group DID itself** can act as a labeler
+- The group DID itself can act as a labeler
 - Admins approve labelers that align with community values
-- Labelers can declare they only moderate within **specific spaces**
+- Labelers can declare they only moderate within specific spaces
 - Individual members can still add their own labelers on top
 
 </div>
@@ -563,10 +569,10 @@ Leaning on ATProto's **labeler system** — but scoped to communities.
 
 The wrapper pattern enables **graduated moderation**:
 
-- Remove a **wrapper** — content hidden from community, but the user's data is intact
-- Remove a **membership proof** — revoke access without destroying contributions
-- **Tombstones** — deleted content leaves a placeholder preserving conversation structure
-- **Appeals** — future direction for disputing moderation decisions
+- Remove a wrapper: content hidden from community, but the user's data is intact
+- Remove a membership proof: revoke access without destroying contributions
+- Deleted content leaves a tombstone preserving conversation structure
+- Appeals: a future direction for disputing moderation decisions
 
 </div>
 
@@ -676,16 +682,16 @@ User content stays with **the author**; community curates with wrappers
 
 <div class="mt-8 p-4 bg-gray-100 rounded-lg">
 
-Decentralization isn't just about **personal** data sovereignty. It's about **collective** data sovereignty — the idea that a community's shared knowledge, history, and spaces should belong to the community.
+Decentralization isn't just about **personal** data sovereignty. It's about **collective** data sovereignty: a community's shared knowledge, history, and spaces should belong to the community.
 
 </div>
 
 <!--
-Groups are a network-level primitive. Every social app eventually needs them — and every social app reinvents them from scratch. When you build groups as shared infrastructure on an open protocol, you're not just solving it for your app. You're solving it for the ecosystem.
+Groups are a network-level primitive. Every social app eventually needs them — and every social app reinvents them from scratch. When you build groups as shared infrastructure on an open protocol, you're not just solving it for your app. You're solving it for every app on the network.
  
 Think about what becomes possible: collaborative playlists where the playlist belongs to the friend group, not Spotify. Study groups where the shared notes belong to the students, not the university's LMS. Discussion forums — like the ones Nick Gerakines described — where user content stays with the author and the community curates it through wrappers.
  
-And here's what I find most exciting about this: decentralization isn't just about personal data sovereignty. It's about collective data sovereignty. The idea that a community's shared knowledge, shared history, and shared spaces should belong to the community.
+And here's what I find most exciting about this: decentralization isn't just about personal data sovereignty. It's about collective data sovereignty: a community's shared knowledge, shared history, and shared spaces should belong to the community.
 -->
 
 ---
@@ -728,7 +734,7 @@ Who owns the group chat? The group should.
 </div>
 
 <!--
-opensocial.community is live. The API is documented. And I genuinely want you to build with it — or build something better, honestly.
+opensocial.community is live. The API is documented. I want you to build with it, or build something better.
  
 If you're building an ATProto app and you need groups, come talk to me. I'd love to help you integrate, and I'd love to learn from what you need that I haven't thought of.
  
