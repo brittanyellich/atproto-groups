@@ -19,7 +19,7 @@ layout: intro
 <div class="absolute bottom-10">
   <span class="font-700">
     @brittanyellich.com
-  </span>
+  </span> | 
   <span class="font-400">
     Brittany Ellich
   </span>
@@ -53,7 +53,7 @@ Turns out it did exist, and some folks did it way better than I did. (Please go 
 </div>
 
 <!--
-A few months ago I had what I thought was a brilliant idea. A GoodReads or Letterboxd on ATProto — how does this not exist yet?? So I started building Collective.
+A few months ago I had what I thought was a brilliant idea. A GoodReads or Letterboxd on ATProto - how does this not exist yet?? So I started building Collective.
 
 <click click>
 
@@ -75,7 +75,7 @@ Turns out it did exist. PopFeed and others were already doing this, and honestly
 <!--
 I run a book club for the online developer community for Overcommitted. We read technical and software books together, and it's one of my favorite places on the internet.
  
-Right now we coordinate on Discord. And Discord is great! But Discord owns our member list, our reading history, and every conversation we've had about every book. If Discord decides to change their terms, or shut down, or ban us for some reason — all of that is just gone.
+Right now we coordinate on Discord. And Discord is great! But Discord owns our member list, our reading history, and every conversation we've had about every book. If Discord decides to change their terms, or shut down, or ban us for some reason - all of that is just gone.
 -->
 
 ---
@@ -87,7 +87,7 @@ layout: statement
 <img src="/sock%20puppet.jpg" alt="Illustration of a sock puppet representing platform control over online communities" class="mx-auto mt-4 h-80 rounded shadow" />
 
 <!--
-And this isn't a Discord problem specifically. It's a platform problem. Think about every group you're part of online — your subreddit, your Facebook group, your Slack workspace. In every case, the platform owns the space. Not you. Not your community.
+And this isn't a Discord problem specifically. It's a platform problem. Think about every group you're part of online - your subreddit, your Facebook group, your Slack workspace. In every case, the platform owns the space. Not you. Not your community.
 -->
 
 ---
@@ -99,7 +99,7 @@ layout: statement
 <img src="/graveyard.jpg" alt="Illustration of a graveyard representing defunct platforms and lost community data" class="mx-auto mt-4 h-80 rounded shadow" />
 
 <!--
-And when the platform disappears, your community disappears with it. Google+, MySpace, Twitter, countless forums — all gone, along with every conversation, every shared memory, every piece of community knowledge. If Discord decides to shut down tomorrow, my book club's entire history vanishes. Not because we did anything wrong, but because we built in someone else's space.
+And when the platform disappears, your community disappears with it. Google+, MySpace, Twitter, countless forums - all gone, along with every conversation, every shared memory, every piece of community knowledge. If Discord decides to shut down tomorrow, my book club's entire history vanishes. Not because we did anything wrong, but because we built in someone else's space.
 -->
 
 ---
@@ -123,19 +123,9 @@ That's a little less solved.
 </div>
 
 <!--
-ATProto has done something really powerful for personal data. Your posts, your social graph, your identity — that lives in your repo, under your control. But what about shared things? What about the book club? The community project? The group chat?
+ATProto has done something really powerful for personal data. Your posts, your social graph, your identity - that lives in your repo, under your control. But what about shared things? What about the book club? The community project? The group chat?
  
-That's still an open question. And it's an exciting one — because when you build groups on a decentralized protocol, you're forced to answer a question that centralized platforms never did: who actually owns this space?
--->
-
----
-layout: section
----
-
-# The Design Space
-
-<!--
-There's no built-in concept of a group. And I actually think that's not a bad thing. Because it means when you build groups, you get to make deliberate choices about things that centralized platforms never thought twice about.
+That's still an open question. And it's an exciting one - because when you build groups on a decentralized protocol, you're forced to answer a question that centralized platforms never did: who actually owns this space?
 -->
 
 ---
@@ -178,12 +168,12 @@ There's been wonderful thinking happening in this community already:
 
 <div class="mt-6 space-y-4">
 
-- **Bryan Newbold** — Proposals on group primitives and community spaces, including record scoping and self-hosting patterns
-- **Nick Gerakines** — The "Community Manager Pattern" and wrapper records for forums
-- **Meri** — Comprehensive summary of different approaches
-- **Frontpage team** — GitHub discussion on groups architecture
-- **Bonfire Networks / Erlend Sogge Heggen** — Group federation and groups-following-groups in the fediverse
-- **Emelia (thisismissem.social)** — Guidance and consulting on developing a model
+- **Bryan Newbold** - Proposals on group primitives and community spaces, including record scoping and self-hosting patterns
+- **Nick Gerakines** - The "Community Manager Pattern" and wrapper records for forums
+- **Meri** - Comprehensive summary of different approaches
+- **Frontpage team** - GitHub discussion on groups architecture
+- **Bonfire Networks / Erlend Sogge Heggen** - Group federation and groups-following-groups in the fediverse
+- **Emelia (thisismissem.social)** - Guidance and consulting on developing a model
 
 </div>
 
@@ -194,9 +184,9 @@ I've been collecting all of these resources and learning from them to put togeth
 </div>
 
 <!--
-There's been wonderful thinking happening in this community already. Bryan Newbold has written two really thoughtful proposals — most recently on community spaces with self-hosting patterns. Nick Gerakines took some of these ideas and built out the "Community Manager Pattern," showing how wrapper records can separate data ownership from community curation. Meri put together a comprehensive summary. The Frontpage team has a great GitHub discussion. And Bonfire Networks and Erlend Sogge Heggen have been thinking and shared about group federation across the fediverse, including the really interesting idea of groups following groups. I've had some great input on Bluesky and on calls with Emelia on ways to think about this.
+There's been wonderful thinking happening in this community already. Bryan Newbold has written two really thoughtful proposals - most recently on community spaces with self-hosting patterns. Nick Gerakines took some of these ideas and built out the "Community Manager Pattern," showing how wrapper records can separate data ownership from community curation. Meri put together a comprehensive summary. The Frontpage team has a great GitHub discussion. And Bonfire Networks and Erlend Sogge Heggen have been thinking and shared about group federation across the fediverse, including the really interesting idea of groups following groups. I've had some great input on Bluesky and on calls with Emelia on ways to think about this.
  
-I've been collecting all of these resources and learning from them — I'll share links at the end.
+I've been collecting all of these resources and learning from them - I'll share links at the end.
 -->
 
 ---
@@ -280,7 +270,7 @@ A group is not a row in some app's database. It's an entity with an identity, ju
 <!--
 Every group gets its own DID. So the Overcommitted book club is did:web:overcommitted.dev. It has its own handle, its own repo on a PDS, its own data store.
  
-Why does this matter? Because it means a group is a first-class citizen of the protocol. It's not a row in some app's database. It's an entity with an identity, just like you and me. And just like personal DIDs, that identity is — at least in principle — portable.
+Why does this matter? Because it means a group is a first-class citizen of the protocol. It's not a row in some app's database. It's an entity with an identity, just like you and me. And just like personal DIDs, that identity is - at least in principle - portable.
  
 Bryan Newbold also points out something cool here: that handle domain can serve double duty as the group's public website. So a PDS registering these dids could create a themed web view with OAuth login, giving the community a real home on the web with clean canonical URLs for its content.
 -->
@@ -399,11 +389,11 @@ graph LR
 <!--
 This is one of the most elegant patterns to emerge from the community's thinking, and I want to give Nick Gerakines credit for articulating it so clearly.
  
-The idea is: user content — a book review, a forum post, a discussion thread — stays in the user's repo. They own it. When that content should appear in a community context, the group creates a lightweight wrapper record in its own repo that references the original via a strongRef.
+The idea is: user content - a book review, a forum post, a discussion thread - stays in the user's repo. They own it. When that content should appear in a community context, the group creates a lightweight wrapper record in its own repo that references the original via a strongRef.
  
-This separation of authorship from distribution is really powerful. If a moderator needs to remove something from the community, they delete the wrapper — but the user's original content stays in their repo. If a user leaves, their content is still theirs; the wrappers can become tombstones showing "content removed by author" while preserving the conversation structure. And multiple communities can create wrappers pointing to the same original content, enabling cross-posting without duplication.
+This separation of authorship from distribution is really powerful. If a moderator needs to remove something from the community, they delete the wrapper - but the user's original content stays in their repo. If a user leaves, their content is still theirs; the wrappers can become tombstones showing "content removed by author" while preserving the conversation structure. And multiple communities can create wrappers pointing to the same original content, enabling cross-posting without duplication.
  
-This also means the group's repo stays lightweight — it's essentially an index of references, not a full copy of all community content. That has important implications for scale, which I'll come back to.
+This also means the group's repo stays lightweight - it's essentially an index of references, not a full copy of all community content. That has important implications for scale, which I'll come back to.
 -->
 
 ---
@@ -412,19 +402,19 @@ This also means the group's repo stays lightweight — it's essentially an index
 
 <div class="space-y-4">
 
-**Step 1** — Register Collective as an AppView with opensocial.community, get an API key
+**Step 1** - Register Collective as an AppView with opensocial.community, get an API key
 
 <span class="text-sm text-gray-500">Service authentication via signed JWTs</span>
 
-**Step 2** — Create the Overcommitted Book Club through Collective
+**Step 2** - Create the Overcommitted Book Club through Collective
 
 <span class="text-sm text-gray-500">New community with its own DID and PDS-backed data store. Creator becomes first admin via membership handshake.</span>
 
-**Step 3** — Members join through the two-way handshake
+**Step 3** - Members join through the two-way handshake
 
 <span class="text-sm text-gray-500">Membership record in member's repo + membership proof in group's repo</span>
 
-**Step 4** — Members contribute content via wrappers
+**Step 4** - Members contribute content via wrappers
 
 <span class="text-sm text-gray-500">Book reviews live in member repos; Collective creates wrappers in the group repo under its namespace</span>
 
@@ -439,59 +429,106 @@ The API supports community creation, membership management, namespaced record st
 <!--
 Let me walk through what this looks like concretely.
  
-I register Collective as an AppView with opensocial.community — that gives me service authentication via signed JWTs. When I create the Overcommitted Book Club through Collective, opensocial.community creates a new community with its own DID and PDS-backed data store. I'm added as the first admin through the membership handshake — my membership record in my repo, the proof in the group's repo.
+I register Collective as an AppView with opensocial.community - that gives me service authentication via signed JWTs. When I create the Overcommitted Book Club through Collective, opensocial.community creates a new community with its own DID and PDS-backed data store. I'm added as the first admin through the membership handshake - my membership record in my repo, the proof in the group's repo.
  
-Members join through the same two-way process. And when someone writes a book review, the content goes to their repo — they own it — and Collective creates a wrapper in the group's repo under its namespace. If another app wants to add different content to the same group, it creates records under its own namespace.
+Members join through the same two-way process. And when someone writes a book review, the content goes to their repo - they own it - and Collective creates a wrapper in the group's repo under its namespace. If another app wants to add different content to the same group, it creates records under its own namespace.
  
 The API supports all of this: community creation, membership management, namespaced record storage, audit logging for accountability, and custom roles and permissions to give communities more control over how their community runs.
 -->
 
 ---
 
-# opensocial.community API
+# Register an App
 
-Full API reference available at **opensocial.community**
-
-<img src="/opensocial.png" alt="Screenshot of the opensocial.community API documentation site" class="mt-4 rounded shadow" />
-
-<div class="mt-8 grid grid-cols-2 gap-6">
-
-<div class="p-4 bg-gray-100 rounded-lg">
-
-## App Registration
-
-Register AppViews with service auth, establish trust, get API keys
-
-</div>
-
-<div class="p-4 bg-gray-100 rounded-lg">
-
-## Community Management
-
-Create, configure, and manage communities as first-class ATProto identities
-
-</div>
-
-<div class="p-4 bg-gray-100 rounded-lg">
-
-## Membership
-
-Two-way handshake, custom roles and permissions, backlink-based discovery
-
-</div>
-
-<div class="p-4 bg-gray-100 rounded-lg">
-
-## Records, Audit Logs, and Custom roles and permissions
-
-Namespaced record storage, full audit trail, community roles
-
-</div>
-
-</div>
+<img src="/developerapps.png" alt="OpenSocial Developer Apps page showing Collective Social app registration with API key and lexicon permissions" class="mx-auto mt-2 h-96 rounded shadow" />
 
 <!--
-You can check out the full API reference at opensocial.community. It covers app registration with service authentication, community creation and management, the membership handshake with custom roles and permissions, namespaced record storage, a full audit log of every admin action, and webhooks so apps can react to changes in real-time.
+First we register Collective as a developer app on opensocial.community. You get an app ID, API key, and you define which lexicon collections your app can read and write, with per-role permissions. Here Collective has permissions for group lists, list items, and post indices.
+-->
+
+---
+
+# Community Members
+
+<img src="/acommunity.png" alt="OpenSocial community page for Overcommitted showing 5 members with their ATProto handles" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+Here's the Overcommitted community on opensocial.community. You can see the members, each identified by their ATProto handle. The community has its own DID, its own avatar, and settings that admins can manage. This is the group as a first-class identity on the protocol.
+-->
+
+---
+
+# Community Settings
+
+<img src="/communitysettings.png" alt="OpenSocial community settings showing community type and app visibility defaults" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+Community admins can configure settings like whether the community is open, approval-required, or invite-only, and how new apps interact with the community by default. These governance decisions are explicit and visible, not buried in some platform policy.
+-->
+
+---
+
+# App Permissions
+
+<img src="/communityappsettings.png" alt="OpenSocial community settings Apps tab showing Collective Social and api apps with enable/disable controls" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+On the Apps tab, community admins control which apps can interact with their community. Each app can be enabled or disabled, and you can manage permissions per app. The community chooses what tools it wants, not the other way around.
+-->
+
+---
+
+
+# Discover Communities
+
+<img src="/collectivegroups.png" alt="Collective Groups page showing communities powered by OpenSocial, including overcommitted.dev, test-community, and oak.coop" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+On the Collective side, users can browse and discover communities powered by OpenSocial. Each community has its own handle and membership status. You can see overcommitted.dev where I'm already a member, and other communities you can join or request access to.
+-->
+
+---
+
+# The Book Club Community on Collective
+
+<img src="/collectivegroup.png" alt="Collective group page for overcommitted.dev showing group lists including Future book club options and Overcommitted Book Club" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+Back on Collective, here's what the Overcommitted group looks like. The group has shared lists that any member can browse, created by Collective under its own namespace in the group's repo. We have a list of future book club options and our current reading list.
+-->
+
+---
+
+# Reading Together
+
+<img src="/collectivebookclub.png" alt="Collective book detail page showing Writing for Developers with reading schedule, progress tracking, and chapter assignments" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+And here's what a book club reading looks like in practice. We're reading Writing for Developers by Piotr Sarna. The group has a shared reading schedule with chapter assignments and due dates, and each member tracks their own progress. The reading list and schedule live in the group's repo; the individual progress records live in each member's repo.
+-->
+
+---
+
+# opensocial.community
+
+Full app available at **opensocial.community**
+
+<img src="/opensocial.png" alt="Screenshot of the opensocial.community API documentation site" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+Full app available at opensocial.community. It covers app registration with service authentication, community creation and management, the membership handshake with custom roles and permissions, namespaced record storage, a full audit log of every admin action, and webhooks so apps can react to changes in real-time.
+-->
+
+---
+
+# collectivesocial.app
+
+Alpha available at **collectivesocial.app**
+
+<img src="/collectivedark.png" alt="Screenshot of the landing page of collectivesocial.app" class="mx-auto mt-2 h-96 rounded shadow" />
+
+<!--
+Also you can check out collectivesocial at collectivesocial.app. It's full of lots of bugs and I'm not sure it will be used much beyond a test bed for open social and my little book club, but you can still go play around! 
 -->
 
 ---
@@ -501,14 +538,14 @@ layout: section
 # Governance and Moderation
 
 <!--
-So far I've been talking mostly about architecture. But the question in the title — "who owns the group chat?" — is really a governance question. And this is where it gets interesting.
+So far I've been talking mostly about architecture. But the question in the title "who owns the group chat?" is really a governance question, and I think it's important to talk a bit about governance and moderation when we're talking about building group infrastructure.
 -->
 
 ---
 
 # Breaking Implicit Feudalism
 
-Nathan Schneider coined the term **"implicit feudalism"** — the default pattern where whoever creates an online space has absolute power over it.
+Nathan Schneider coined the term **"implicit feudalism"** - the default pattern where whoever creates an online space has absolute power over it, usually governed by the rules of the platform.
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 
@@ -516,21 +553,21 @@ Nathan Schneider coined the term **"implicit feudalism"** — the default patter
 
 ## The feudal default
 
-- Creator = permanent dictator
-- Your only tools: censorship and exile
-- No accountability, no transparency
-- Platform can override everything anyway
+"a bias, both cultural and technical, for building communities as fiefdoms."
+
+- The platform controls the capabilities of the group
+- The group admins have absolute power over the group
+- A member needs to seek explicit permissions to make changes
 
 </div>
 
 <div>
 
-## What shared groups on ATProto enable
+## What shared groups on ATProto can enable
 
-- **Shared ownership** — governance isn't locked to a single creator
-- **Audit logging** — every admin action recorded and reviewable
-- **Transparent governance** — rules are visible, not hidden in opaque policy
-- **User exit rights** — leave anytime by deleting your own record
+- **Shared ownership** - governance doesn't have to be locked to a single creator or platform
+- **Transparent governance** - rules that are visible to everyone
+- **Rules that fit your community** - we can just do things, let's make rules that actually work for communities
 
 </div>
 
@@ -539,9 +576,9 @@ Nathan Schneider coined the term **"implicit feudalism"** — the default patter
 <!--
 I want to name a concept here that I think is really important. Nathan Schneider, a media studies professor at CU Boulder, coined the term "implicit feudalism" to describe the default governance model of online communities. Whoever creates the space has essentially absolute power. Your only tools for dealing with conflict are censorship and exile. And the platform can override everything anyway.
  
-We've all just accepted this as normal. But it's not inevitable — it's a design choice. And ATProto gives us a chance to make different choices.
- 
-opensocial.community already supports shared governance across a group of admins or members. It has audit logging — every admin action is recorded. These aren't aspirational features; they're shipped. And the user always has exit rights — you can leave by deleting your own membership record. No permission needed.
+We've all just accepted this as normal. But it's not inevitable - it's a design choice. 
+
+ATProto gives us a chance to make different choices.
 -->
 
 ---
@@ -565,7 +602,7 @@ Leaning on ATProto's **labeler system**, scoped to communities.
 
 <div>
 
-## The Wrapper Advantage
+## The Wrapper Advantage for Moderation
 
 The wrapper pattern enables **graduated moderation**:
 
@@ -580,14 +617,13 @@ The wrapper pattern enables **graduated moderation**:
 
 <div class="mt-4 p-3 bg-gray-100 rounded-lg text-sm">
 
-The community decides its moderation standards, not the platform. That's empowering — but it also means the community is **responsible** for its moderation.
-
+The community decides its moderation standards, not the platform.
 </div>
 
 <!--
 For moderation, I'm planning to lean on ATProto's composable labeler system, but thinking about how it can be scoped specifically to community spaces.
  
-Bryan Newbold proposed that the group DID itself could act as a labeler — which is elegant because it means the community's moderation is built into its identity. Admins can approve additional labelers that align with their values. And labelers can declare that they only moderate within specific spaces, which solves the overwhelming scope problem that labeler operators face on the broader network today.
+Bryan Newbold proposed that the group DID itself could act as a labeler - which is elegant because it means the community's moderation is built into its identity. Admins can approve additional labelers that align with their values. And labelers can declare that they only moderate within specific spaces, which solves the overwhelming scope problem that labeler operators face on the broader network today.
  
 The wrapper pattern also gives us really nice graduated moderation options. You can remove a wrapper to hide specific content without touching the user's data. You can remove a membership proof to revoke access. When content is deleted by the author, the wrapper stays as a tombstone preserving the conversation's structure. And there's room for appeals processes in the future.
  
@@ -598,7 +634,7 @@ The community decides its moderation standards, not the platform. That's empower
 
 ---
 
-# Hard Questions
+# There's still a lot to figure out
 
 Things I'm still thinking about:
 
@@ -606,15 +642,19 @@ Things I'm still thinking about:
 
 ## Private groups
 
-How can we create completely **private groups** and group membership? This can be critical for **community safety** — not every group should be publicly discoverable or have a visible member list.
+How can we create completely **private groups** and group membership? This can be critical for **community safety** - not every group should be publicly discoverable or have a visible member list.
 
 ## Group creation
 
-Can we integrate a dedicated **group PDS** so that new group DIDs can be created easily from within an AppView — without requiring manual setup?
+Can we integrate a dedicated **group PDS** so that new group DIDs can be created easily from within an AppView - without requiring manual setup?
 
 ## Interop
 
-Can we bridge ATProto groups to ActivityPub communities via **BridgyFed**? Can we map existing Discord/Reddit concepts into this model? I think **yes**, but the mapping isn't trivial.
+Can we bridge ATProto groups to ActivityPub communities via **BridgyFed**?
+
+## Governance models
+
+How do we break implicit feudalism? How do we enable groups to run and operate without weird absolutist power dynamics?
 
 </div>
 
@@ -627,7 +667,7 @@ These are the kinds of problems that are best solved together, which is why I'm 
 <!--
 I want to be honest about what's not solved yet:
 
-Private groups. How do we create completely private groups where membership isn't publicly visible? This matters a lot for safety — think support groups, vulnerable communities, internal teams. Right now ATProto repos are public by default, so we need to think carefully about privacy through indirection, encrypted membership lists, or other patterns.
+Private groups. How do we create completely private groups where membership isn't publicly visible? This matters a lot for safety - think support groups, vulnerable communities, internal teams. Right now ATProto repos are public by default, so we need to think carefully about privacy through indirection, encrypted membership lists, or other patterns.
 
 Group creation. Right now creating a group means creating a new DID, which means PDS infrastructure. Can we integrate a dedicated group PDS so that AppViews can spin up new group DIDs seamlessly? The UX needs to be as simple as "create a group" in the app, not "go set up a PDS."
 
@@ -640,7 +680,7 @@ These are the kinds of problems that are best solved together, which is why I'm 
 layout: section
 ---
 
-# What This Unlocks
+# Why are groups even important?
 
 <!--
 I want to zoom out for a moment. Because I've been talking about book clubs and APIs, but what we're really talking about is something much bigger.
@@ -658,7 +698,7 @@ Groups are a **network-level primitive**. Every social app eventually needs them
 
 ## Collaborative Playlists
 
-The playlist belongs to the **friend group**, not Spotify
+The playlist belongs to the **friend group**
 
 </div>
 
@@ -666,7 +706,7 @@ The playlist belongs to the **friend group**, not Spotify
 
 ## Study Groups
 
-Shared notes belong to the **students**, not the university's LMS
+Shared notes belong to the **students**
 
 </div>
 
@@ -687,9 +727,9 @@ Decentralization isn't just about **personal** data sovereignty. It's about **co
 </div>
 
 <!--
-Groups are a network-level primitive. Every social app eventually needs them — and every social app reinvents them from scratch. When you build groups as shared infrastructure on an open protocol, you're not just solving it for your app. You're solving it for every app on the network.
+Groups are a network-level primitive. Every social app eventually needs them - and every social app reinvents them from scratch. When you build groups as shared infrastructure on an open protocol, you're not just solving it for your app. You're solving it for every app on the network.
  
-Think about what becomes possible: collaborative playlists where the playlist belongs to the friend group, not Spotify. Study groups where the shared notes belong to the students, not the university's LMS. Discussion forums — like the ones Nick Gerakines described — where user content stays with the author and the community curates it through wrappers.
+Think about what becomes possible: collaborative playlists where the playlist belongs to the friend group, not Spotify. Study groups where the shared notes belong to the students, not the university's LMS. Discussion forums - like the ones Nick Gerakines described - where user content stays with the author and the community curates it through wrappers.
  
 And here's what I find most exciting about this: decentralization isn't just about personal data sovereignty. It's about collective data sovereignty: a community's shared knowledge, shared history, and shared spaces should belong to the community.
 -->
@@ -700,7 +740,7 @@ layout: statement
 
 # Who owns the group chat?
 
-## The group should
+<h2 v-click>The group should</h2>
 
 <!--
 Who owns the group chat? The group should.
@@ -708,26 +748,30 @@ Who owns the group chat? The group should.
 
 ---
 
-# Build With Me
+# Let's build together
 
 <div class="grid grid-cols-2 gap-8">
 
 <div>
 
-### Resources
+## Resources
 
-- **API and Docs** — [opensocial.community](https://opensocial.community)
-- **Blog post** — [brittanyellich.com/atproto-groups](https://brittanyellich.com/atproto-groups)
-- **Book club** — The Overcommitted community and book club is open, come join us! [overcommitted.dev](https://overcommitted.dev)
+- [opensocial.community](https://opensocial.community) - API and Docs
+- [brittanyellich.com/atproto-groups](https://brittanyellich.com/atproto-groups) - Blog post
+- [overcommitted.dev](https://overcommitted.dev) - The Overcommitted community and book club is open, come join us!
 
-### Community References
+</div>
 
-- Bryan Newbold — [Community Spaces on AT Protocol](https://bnewbold.leaflet.pub/3me3ea64bhk26)
-- Nick Gerakines — [The Community Manager Pattern](https://ngerakines.leaflet.pub/3majmrpjrd22b) and [Forums](https://ngerakines.leaflet.pub/3malqm3dqls27)
+<div>
+
+## Community References
+
+- Bryan Newbold - [Community Spaces on AT Protocol](https://bnewbold.leaflet.pub/3me3ea64bhk26)
+- Nick Gerakines - [The Community Manager Pattern](https://ngerakines.leaflet.pub/3majmrpjrd22b) and [Forums](https://ngerakines.leaflet.pub/3malqm3dqls27)
 - [ATProto Community Discourse](https://discourse.atprotocol.community/t/representing-groups-and-other-shared-resources-in-atproto/296)
-- Bonfire Networks — [Groups in the Fediverse](https://discourse.atprotocol.community/t/bonfire-networks-why-community-matters-groups-as-the-next-step-for-the-fediverse/350)
-- Erlend Sogge Heggen — [Group Convergence](https://blog.erlend.sh/group-convergence)
-- Nathan Schneider — [Governable Spaces](https://luminosoa.org/books/m/10.1525/luminos.181)
+- Bonfire Networks - [Groups in the Fediverse](https://discourse.atprotocol.community/t/bonfire-networks-why-community-matters-groups-as-the-next-step-for-the-fediverse/350)
+- Erlend Sogge Heggen - [Group Convergence](https://blog.erlend.sh/group-convergence)
+- Nathan Schneider - [Governable Spaces](https://luminosoa.org/books/m/10.1525/luminos.181)
 
 </div>
 
@@ -738,11 +782,11 @@ opensocial.community is live. The API is documented. I want you to build with it
  
 If you're building an ATProto app and you need groups, come talk to me. I'd love to help you integrate, and I'd love to learn from what you need that I haven't thought of.
  
-If you're thinking about governance models, moderation, or how communities should work on decentralized protocols — I want to hear your ideas. These are the kind of problems that get better when more people are thinking about them.
+If you're thinking about governance models, moderation, or how communities should work on decentralized protocols - I want to hear your ideas. These are the kind of problems that get better when more people are thinking about them.
  
-There's a list of community references here — Bryan Newbold's posts on community spaces, Nick Gerakines' community manager pattern work, the ATProto discourse discussion, Bonfire's thinking on groups for the fediverse, Erlend's group convergence post, and Nathan Schneider's Governable Spaces book on democratic design for online communities. These have all shaped my thinking and they're worth reading.
+There's a list of community references here - Bryan Newbold's posts on community spaces, Nick Gerakines' community manager pattern work, the ATProto discourse discussion, Bonfire's thinking on groups for the fediverse, Erlend's group convergence post, and Nathan Schneider's Governable Spaces book on democratic design for online communities. These have all shaped my thinking and they're worth reading.
  
-And if any of this sounds interesting and you also like reading books about software — the Overcommitted book club is open. Come join us.
+And if any of this sounds interesting and you also like reading books about software - the Overcommitted book club is open. Come join us.
 -->
 
 ---
